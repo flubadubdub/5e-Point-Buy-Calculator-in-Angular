@@ -1,0 +1,86 @@
+/**.playerClasses{
+    list-style-type: none;
+    margin: 0 0 2em 0;
+    width: 15em;
+    padding: 0;
+}
+.playerClasses li{
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(24, 29, 56);
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6 em;
+    border-radius: 4px;
+    color: whitesmoke;
+}
+.playerClasses li:hover{
+    background-color: rgb(40, 40, 63);
+}**/
+
+.playerClassList{
+    float: left;
+    width: 15%;
+    background-color: rgb(24, 29, 56);
+    height: 100%;
+}
+.playerClassList li{
+    color:aliceblue;
+    list-style-type: none;
+    font-family: Philosopher;
+    padding: .3 em 0;
+    text-align: center;
+    border-left: 4px solid  aliceblue;
+    border-right: 4px solid aliceblue;
+    border-top: 2px solid aliceblue;
+    border-bottom: 2px solid aliceblue;
+}
+.playerClassList p{
+    font-family: philosopher;
+}
+
+.flavorTextArea{
+    color:aliceblue;
+    font-family: philosopher;
+    height: 30%;
+    padding: .3 em 0;
+}
+.flavorTextArea h2{
+    text-align: center;
+}
+.flavorTextArea p{
+    text-align: center;
+}
+
+.pageContainer{
+    width: 1200px;
+    height: 800px;
+    max-width: 1200px;
+    max-height: 800px;
+    background-color: rgb(24, 29, 56);
+}
+
+.subclassSelect{
+    height: 30%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.subclassCard{
+    color:aliceblue;
+    display: inline-block;
+    border: 2px solid aliceblue;
+    display: inline-block;
+}
+.scrolling-wrapper{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.featureTableArea{
+    height: 40%;
+}

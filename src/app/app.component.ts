@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-point-buy-calculator';
+  title = 'D&D 5e Point Buy Calculator';
 }

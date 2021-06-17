@@ -1,0 +1,22 @@
+<h2>Ability Scores</h2>
+<table>
+    <tr>
+        <th class="content">Ability</th>
+        <th class="content">Score</th>
+        <th class="content">Modifier</th>
+        <th class="content">Adjustments</th>
+        <th class="content">Point Cost</th>
+    </tr>
+    <tr *ngFor="let abilityScore of abilityScores; index as i">
+        <td class="content">{{abilityScore.name}}</td>
+        <td class="content">{{abilityScore.value}}</td>
+        <td class="content">{{abilityScore.modifier}}</td>
+        <td class="content">
+            <button type="button" (click)="onIncrementClick(i)">Increase</button>
+            <button type="button"(click)="onDecrementClick(i)">Decrease</button>
+        </td>
+        <td class="content">{{scoreCosts[currentCostIndeces[i]]}}</td>
+    </tr>
+</table>
+
+<h4 [style.color]="getColor()">Total Points: {{points}} / 27</h4>

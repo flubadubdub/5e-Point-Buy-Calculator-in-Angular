@@ -1,0 +1,23 @@
+<div class="pageContainer">
+<div class="playerClassList">
+    <ul>
+        <li *ngFor="let playerClass of playerClasses; index as i" (click)="onSelect(playerClass)">
+            <p>{{playerClass.name}}</p>
+        </li>
+    </ul>
+</div>
+
+<div class="flavorTextArea" *ngIf="selectedPlayerClass"><h2>{{selectedPlayerClass.name}}</h2>
+    <p>Class flavor text goes here.</p>
+</div>
+
+<div class="subclassSelect" *ngIf="selectedPlayerClass">
+    <div class="scrolling-wrapper">
+        <div class="subclassCard"><h2>Subclass 1</h2></div>
+        <div class="subclassCard"><h2>Subclass 2</h2></div>
+        <div class="subclassCard"><h2>Subclass 3</h2></div>
+        <div class="subclassCard"><h2>Subclass 4</h2></div>
+    </div>
+</div>
+
+</div>
